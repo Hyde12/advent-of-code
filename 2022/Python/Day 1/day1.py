@@ -15,4 +15,12 @@ for line in data:
 
 totals.sort(reverse=True)
 
-print(totals[0])
+def top(num):
+    i = 0
+    top = []
+    while i < num:
+        top.append(totals[i])
+        i += 1
+    return sum(top)
+
+print(top(3))
